@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
+import styles from './styles.scss';
 
 class Home extends Component {
   constructor(props) {
@@ -49,3 +50,5 @@ class Home extends Component {
     );
   }
 }
+
+export default CSSModules(Home, styles);
