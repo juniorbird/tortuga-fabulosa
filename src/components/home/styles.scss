@@ -11,18 +11,21 @@
 //wraps turkey and buttons
 .hey-turkey {
   background: $white;
+  display: block;
   &-bird {
-    display: block;
+    display: inline-block;
   }
   &-speech {
-
+    display: inline-block;
   }
   &-teams {
-
+    display: block;
   }
+  //wraps buttons
   &-choose {
+    display: block;
     &-red {
-
+      
     }
     &-blue {
 
