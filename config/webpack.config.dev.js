@@ -86,7 +86,7 @@ module.exports = {
     // https://github.com/facebookincubator/create-react-app/issues/290
     extensions: ['.js', '.json', '.jsx'],
     alias: {
-      
+
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
@@ -116,7 +116,7 @@ module.exports = {
           {
             options: {
               formatter: eslintFormatter,
-              
+
             },
             loader: require.resolve('eslint-loader'),
           },
@@ -137,6 +137,7 @@ module.exports = {
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,
+          /\.scss$/,
           /\.json$/,
           /\.bmp$/,
           /\.gif$/,
@@ -165,7 +166,7 @@ module.exports = {
         include: paths.appSrc,
         loader: require.resolve('babel-loader'),
         options: {
-          
+
           // This is a feature of `babel-loader` for webpack (not Babel itself).
           // It enables caching results in ./node_modules/.cache/babel-loader/
           // directory for faster rebuilds.
@@ -178,13 +179,14 @@ module.exports = {
       // In production, we use a plugin to extract that CSS to a file, but
       // in development "style" loader enables hot editing of CSS.
       {
-        test: /\.css$/,
+        test: /\.s?css$/,
         use: [
           require.resolve('style-loader'),
           {
             loader: require.resolve('css-loader'),
             options: {
               importLoaders: 1,
+              modules:true,
             },
           },
           {
@@ -205,6 +207,7 @@ module.exports = {
               ],
             },
           },
+          require.resolve('sass-loader')
         ],
       },
       // ** STOP ** Are you adding a new loader?

@@ -8,12 +8,17 @@
   height: 100%;
 }
 
+.hey-turkey-bird {
+  background: #fff;
+}
+
 //wraps turkey and buttons
 .hey-turkey {
   background: $white;
   display: block;
   &-bird {
     display: inline-block;
+    color: #fff;
   }
   &-speech {
     display: inline-block;
@@ -25,10 +30,16 @@
   &-choose {
     display: block;
     &-red {
-      
+      background: $t-red;
     }
     &-blue {
-
+      background: $t-blue;
     }
   }
+}
+
+.btn {
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: #fff;
 }

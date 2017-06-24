@@ -8,6 +8,7 @@ class Home extends Component {
   }
 
   render() {
+    console.log(styles);
     return(
       <div styleName="wrapper">
         <header>
@@ -37,12 +38,8 @@ class Home extends Component {
               <p>CHOOSE YOUR TEAM</p>
             </div>
             <div styleName="hey-turkey-choose">
-              <div styleName="hey-turkey-choose-red">
-
-              </div>
-              <div styleName="hey-turkey-choose-blue">
-
-              </div>
+              <button styleName="hey-turkey-choose-red btn">Red Team</button>
+              <button styleName="hey-turkey-choose-blue btn">Blue Team</button>
             </div>
           </div>
         </div>
@@ -51,4 +48,4 @@ class Home extends Component {
   }
 }
 
-export default CSSModules(Home, styles);
+export default CSSModules(Home, styles, { allowMultiple: true });
