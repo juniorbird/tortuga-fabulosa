@@ -1,5 +1,6 @@
 @import "src/css/colors";
 
+//page wrapper
 .wrapper {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
   height: 100%;
 }
 
-
+//wraps turkey and buttons
 .hey-turkey {
   background: $white;
   &-bird {

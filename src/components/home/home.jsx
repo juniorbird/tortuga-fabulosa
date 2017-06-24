@@ -34,7 +34,7 @@ class Home extends Component {
 
             </div>
             <div styleName="hey-turkey-teams">
-
+              <p>CHOOSE YOUR TEAM</p>
             </div>
             <div styleName="hey-turkey-choose">
               <div styleName="hey-turkey-choose-red">
